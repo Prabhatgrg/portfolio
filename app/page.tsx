@@ -5,7 +5,7 @@ import SideBar from '@/Components/SideBar'
 export default function Home() {
   return (
     <main>
-      <NavBar />
+      <SideBar />
       <h1>Test Page</h1>
     </main>
   )
