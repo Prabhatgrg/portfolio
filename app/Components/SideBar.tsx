@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const SideBar = () => {
   return (
-    <div>
+    <aside className="bg-slate-100 flex flex-col h-screen fixed w-1/4">
       <h1>This is a SideBar</h1>
-    </div>
-  )
-}
+    </aside>
+  );
+};
 
-export default SideBar
+export default SideBar;

@@ -4,9 +4,9 @@ import SideBar from '@/Components/SideBar'
 
 export default function Home() {
   return (
-    <main>
+    <main className='bg-gray-400 h-screen'>
       <SideBar />
-      <h1>Test Page</h1>
+      {/* <h1>Test Page</h1> */}
     </main>
   )
 }
