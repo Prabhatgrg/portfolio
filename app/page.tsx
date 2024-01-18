@@ -7,7 +7,9 @@ export default function Home() {
     <>
       <SideBar />
       <main className="bg-gray-400 h-screen flex justify-center ml-80">
-        <p>Test Page</p>
+        <div className="pt-12 flex justify-center items-center">
+          <h1 className="font-extrabold text-6xl">Prabhat Gurung</h1>
+        </div>
       </main>
     </>
   );
