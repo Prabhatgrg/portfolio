@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const SideBar = () => {
@@ -6,9 +7,15 @@ const SideBar = () => {
       <h1 className="text-white">This is a SideBar</h1>
       <div className="lists text-white flex justify-center items-center mt-10">
         <ul className="flex flex-col gap-10">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
+          <Link href="/">
+            <li>Home</li>
+          </Link>
+          <Link href="/">
+            <li>About</li>
+          </Link>
+          <Link href="/">
+            <li>Projects</li>
+          </Link>
         </ul>
       </div>
     </aside>
