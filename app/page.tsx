@@ -18,7 +18,7 @@ export default function Home() {
               className="h-screen"
               alt="Background Image"
               style={{
-                marginLeft: 200,
+                // marginLeft: 200,
                 objectFit: "cover",
                 zIndex: -1,
               }}
