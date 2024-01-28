@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <SideBar />
       {/* <main className="bg-gray-500 h-screen flex justify-center ml-80"> */}
-      <main className="min-w-60 flex justify-center ml-80">
+      <main className="flex justify-center ml-80">
         <div className="pt-12 flex justify-center items-center">
           <h1 className="font-extrabold text-6xl text-slate-200">
             <Image
