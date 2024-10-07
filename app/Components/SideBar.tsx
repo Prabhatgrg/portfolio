@@ -14,17 +14,17 @@ const SideBar = () => {
         Social Media Icons Goes Here
       </div>
       <div className="lists text-white flex ms-5 items-center mt-10">
-        <ul className="flex flex-col gap-10">
-          <Link className={router == "/" ? "active" : ""} href="/">
+        <ul className="flex flex-col gap-10 w-full">
+          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 ` + (router == "/" ? "active" : "")} href="/">
             <li>Home</li>
           </Link>
-          <Link className={router == "/about" ? "active" : ""} href="/about">
+          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 ` + (router == "/about" ? "active" : "")} href="/about">
             <li>About</li>
           </Link>
-          <Link className={router == "/projects" ? "active" : ""} href="/projects">
+          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 ` + (router == "/projects" ? "active" : "")} href="/projects">
             <li>Projects</li>
           </Link>
-          <Link href="/">
+          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 `} href="/CV_main.pdf" download>
             <li>Get Resume</li>
           </Link>
         </ul>
