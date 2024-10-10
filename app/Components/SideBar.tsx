@@ -15,7 +15,7 @@ const SideBar = () => {
       </div>
       <div className="lists text-white flex ms-5 items-center mt-10">
         <ul className="flex flex-col gap-10 w-full">
-          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 ` + (router == "/" ? "active" : "")} href="/">
+          <Link className={`hover:bg-blue-200 hover:transition ease-in-out delay-150 hover:rounded-md p-4 ` + (router == "/" ? "active" : "")} href="/">
             <li>Home</li>
           </Link>
           <Link className={`hover:bg-blue-200 hover:rounded-md p-4 ` + (router == "/about" ? "active" : "")} href="/about">
