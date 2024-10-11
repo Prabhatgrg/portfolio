@@ -13,22 +13,22 @@ const SideBar = () => {
       <div className="socials mt-6 text-white">
         Social Media Icons
       </div>
-      <div className="lists text-white flex ms-5 items-center mt-10">
-        <ul className="flex flex-col gap-10 w-full">
-          <Link className={`hover:bg-blue-200 hover:transition ease-in-out delay-150 hover:rounded-md p-4 ` + (router == "/" ? "active" : "")} href="/">
-            <li>Home</li>
-          </Link>
-          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 ` + (router == "/about" ? "active" : "")} href="/about">
-            <li>About</li>
-          </Link>
-          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 ` + (router == "/projects" ? "active" : "")} href="/projects">
-            <li>Projects</li>
-          </Link>
-          <Link className={`hover:bg-blue-200 hover:rounded-md p-4 `} href="/CV_main.pdf" download>
-            <li>Get Resume</li>
-          </Link>
-        </ul>
-      </div>
+        <div className="lists text-white flex items-center mt-10 w-full">
+            <ul className="flex flex-col items-center gap-10 w-full">
+                <Link href="/" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/" ? "active" : ""}`}>
+                    <li className="w-full text-center">Home</li>
+                </Link>
+                <Link href="/about" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/about" ? "active" : ""}`}>
+                    <li className="w-full text-center">About</li>
+                </Link>
+                <Link href="/projects" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/projects" ? "active" : ""}`}>
+                    <li className="w-full text-center">Projects</li>
+                </Link>
+                <Link href="/CV_main.pdf" download className="w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4">
+                    <li className="w-full text-center">Get Resume</li>
+                </Link>
+            </ul>
+        </div>
     </aside>
   );
 };
