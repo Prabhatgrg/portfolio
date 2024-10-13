@@ -15,13 +15,13 @@ const SideBar = () => {
         {/*Social Media Icons*/}
           <div className="flex justify-center gap-5">
               <Link href="https://github.com/Prabhatgrg" target="_blank">
-                  <FaGithub size={30} />
+                  <FaGithub size={30} className="hover:bg-blue-500 rounded-full" />
               </Link>
               <Link href="https://www.facebook.com/prabhat.gurung.180/" target="_blank">
-                  <FaFacebook size={30} />
+                  <FaFacebook size={30} className="hover:bg-blue-500 rounded-full" />
               </Link>
               <Link href="https://www.linkedin.com/in/prabhat-g-661204109/" target="_blank">
-                  <FaLinkedin size={30} />
+                  <FaLinkedin size={30} className="hover:bg-blue-500 hover:rounded-md" />
               </Link>
           </div>
       </div>
