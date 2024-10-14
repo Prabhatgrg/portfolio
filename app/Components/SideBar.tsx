@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaFacebook, FaLinkedin, FaHome, FaInfoCircle, FaList, FaDownload } from "react-icons/fa";
 import React from "react";
 
 const SideBar = () => {
@@ -10,7 +10,7 @@ const SideBar = () => {
 
   return (
     <aside className="bg-[#111827] flex flex-col h-screen fixed items-center w-1/4">
-      <h1 className="text-white text-center mt-10">Prabhat Gurung</h1>
+      <h1 className="font-bold text-2xl text-white text-center mt-10">PG.</h1>
       <div className="socials mt-6 text-white">
         {/*Social Media Icons*/}
           <div className="flex justify-center gap-5">
@@ -28,16 +28,38 @@ const SideBar = () => {
         <div className="lists text-white flex items-center mt-10 w-full">
             <ul className="flex flex-col items-center gap-10 w-full">
                 <Link href="/" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/" ? "active" : ""}`}>
-                    <li className="w-full text-center">Home</li>
+                    <li className="w-full flex items-center justify-center gap-5 text-center">
+                        <FaHome size={20} />
+                        <div className="pt-1">
+                            Home
+                        </div>
+                    </li>
                 </Link>
                 <Link href="/about" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/about" ? "active" : ""}`}>
-                    <li className="w-full text-center">About</li>
+                    <li className="w-full flex items-center justify-center gap-5 text-center">
+                        <FaInfoCircle size={20} />
+                        <div className="pt-1">
+                           About
+                        </div>
+                    </li>
                 </Link>
-                <Link href="/projects" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/projects" ? "active" : ""}`}>
-                    <li className="w-full text-center">Projects</li>
+                <Link href="/projects"
+                      className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/projects" ? "active" : ""}`}>
+                    <li className="w-full flex items-center justify-center gap-5 text-center">
+                        <FaList size={20} />
+                        <div className="pt-1">
+                           Projects
+                        </div>
+                    </li>
                 </Link>
-                <Link href="/CV_main.pdf" download className="w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4">
-                    <li className="w-full text-center">Get Resume</li>
+                <Link href="/CV_main.pdf" download="CV"
+                      className="w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4">
+                    <li className="w-full flex items-center justify-center gap-5 text-center">
+                        <FaDownload size={20} />
+                        <div className="pt-1">
+                           Get Resume
+                        </div>
+                    </li>
                 </Link>
             </ul>
         </div>
