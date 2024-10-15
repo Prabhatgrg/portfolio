@@ -13,7 +13,7 @@ const SideBar = () => {
       <h1 className="font-bold text-2xl text-white text-center mt-10">PG.</h1>
       <div className="socials mt-6 text-white">
         {/*Social Media Icons*/}
-          <div className="flex justify-center gap-5">
+          <div className="flex justify-center gap-10">
               <Link href="https://github.com/Prabhatgrg" target="_blank">
                   <FaGithub size={30} className="hover:bg-blue-500 rounded-full" />
               </Link>
@@ -27,7 +27,7 @@ const SideBar = () => {
       </div>
         <div className="lists text-white flex items-center mt-10 w-full">
             <ul className="flex flex-col items-center gap-10 w-full">
-                <Link href="/" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/" ? "active" : ""}`}>
+                <Link href="/" className={`w-full hover:bg-[#E9520E] hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/" ? "active" : ""}`}>
                     <li className="w-full flex items-center justify-center gap-5 text-center">
                         <FaHome size={20} />
                         <div className="pt-1">
@@ -35,7 +35,7 @@ const SideBar = () => {
                         </div>
                     </li>
                 </Link>
-                <Link href="/about" className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/about" ? "active" : ""}`}>
+                <Link href="/about" className={`w-full hover:bg-[#E9520E] hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/about" ? "active" : ""}`}>
                     <li className="w-full flex items-center justify-center gap-5 text-center">
                         <FaInfoCircle size={20} />
                         <div className="pt-1">
@@ -44,7 +44,7 @@ const SideBar = () => {
                     </li>
                 </Link>
                 <Link href="/projects"
-                      className={`w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/projects" ? "active" : ""}`}>
+                      className={`w-full hover:bg-[#E9520E] hover:transition ease-in duration-300 hover:rounded-md p-4 ${router == "/projects" ? "active" : ""}`}>
                     <li className="w-full flex items-center justify-center gap-5 text-center">
                         <FaList size={20} />
                         <div className="pt-1">
@@ -53,7 +53,7 @@ const SideBar = () => {
                     </li>
                 </Link>
                 <Link href="/CV_main.pdf" download="CV"
-                      className="w-full hover:bg-blue-200 hover:transition ease-in duration-300 hover:rounded-md p-4">
+                      className="w-full hover:bg-[#E9520E] hover:transition ease-in duration-300 hover:rounded-md p-4">
                     <li className="w-full flex items-center justify-center gap-5 text-center">
                         <FaDownload size={20} />
                         <div className="pt-1">
