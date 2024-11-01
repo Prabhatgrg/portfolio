@@ -4,10 +4,7 @@ const About = () => {
   return (
       <>
           <div className="w-full flex">
-              {/*<div className="bg-[#111827] flex flex-col h-screen fixed items-center w-1/4">*/}
-              {/*    <SideBar/>*/}
-              {/*</div>*/}
-              <div className="flex flex-col h-screen bg-[#111827] w-1/4 items-center">
+              <div className="flex flex-col h-screen bg-[#111827] w-2/6 items-center">
                   <SideBar />
               </div>
               <aside className="w-full flex bg-black h-screen justify-center items-center">
