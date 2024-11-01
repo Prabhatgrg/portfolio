@@ -3,9 +3,14 @@ import SideBar from "@/Components/SideBar";
 const About = () => {
   return (
       <>
-          <div>
-              <SideBar/>
-              <aside className="w-full flex justify-center bg-black h-screen items-center">
+          <div className="w-full flex">
+              {/*<div className="bg-[#111827] flex flex-col h-screen fixed items-center w-1/4">*/}
+              {/*    <SideBar/>*/}
+              {/*</div>*/}
+              <div className="flex flex-col h-screen bg-[#111827] w-1/4 items-center">
+                  <SideBar />
+              </div>
+              <aside className="w-full flex bg-black h-screen justify-center items-center">
                   <div className="pt-12">
                       <h1 className="font-extrabold text-6xl text-white">
                           About Me

@@ -9,19 +9,19 @@ const SideBar = () => {
   const router = usePathname();
 
   return (
-    <aside className="bg-[#111827] flex flex-col h-screen fixed items-center w-1/4">
-      <h1 className="font-bold text-2xl text-white text-center mt-10">PG.</h1>
-      <div className="socials mt-6 text-white">
+    <aside className="w-full">
+      <h1 className="font-bold text-2xl text-white text-center mt-10 pl-8">PG.</h1>
+      <div className="socials mt-10 text-white">
         {/*Social Media Icons*/}
-          <div className="flex justify-center gap-10">
+          <div className="flex justify-center gap-12">
               <Link href="https://github.com/Prabhatgrg" target="_blank">
-                  <FaGithub size={30} className="hover:bg-blue-500 rounded-full" />
+                  <FaGithub size={30} className="hover:bg-blue-500 rounded-full ml-5" />
               </Link>
               <Link href="https://www.facebook.com/prabhat.gurung.180/" target="_blank">
-                  <FaFacebook size={30} className="hover:bg-blue-500 rounded-full" />
+                  <FaFacebook size={30} className="hover:bg-blue-500 rounded-full ml-5" />
               </Link>
               <Link href="https://www.linkedin.com/in/prabhat-g-661204109/" target="_blank">
-                  <FaLinkedin size={30} className="hover:bg-blue-500 hover:rounded-md" />
+                  <FaLinkedin size={30} className="hover:bg-blue-500 hover:rounded-md ml-5" />
               </Link>
           </div>
       </div>
