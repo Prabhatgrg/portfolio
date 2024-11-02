@@ -17,7 +17,7 @@ export default function Home() {
                 <Image
                   src="/images/coding-laptop.jpg"
                   fill
-                  className=""
+                  className="h-screen"
                   alt="Background Image"
                   style={{
                     objectFit: "cover",
