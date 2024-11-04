@@ -8,7 +8,7 @@ const Projects = () => {
                   <SideBar />
               </div>
               <main className="w-full bg-black flex justify-center">
-                  <div className="pt-12 flex justify-center items-center">
+                  <div className="pt-12 flex justify-center items-center" data-aos="fade-down">
                       <h1 className="font-extrabold text-6xl text-white">
                           My Projects
                       </h1>
