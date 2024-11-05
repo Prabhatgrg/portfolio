@@ -12,7 +12,7 @@ export default function Home() {
                 <SideBar />
             </div>
           <aside className="w-full flex justify-center">
-            <div className="pt-12 flex justify-center items-center" data-aos="fade-up">
+            <div className="pt-12 flex justify-center items-center" data-aos="zoom-in">
               <h1 className="font-extrabold text-6xl text-slate-200">
                 <Image
                   src="/images/coding-laptop.jpg"
