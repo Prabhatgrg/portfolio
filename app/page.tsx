@@ -5,6 +5,7 @@ import SideBar from "@/Components/SideBar";
 // import BgImage from "/public/images/night-sky.jpg";
 // import Coding from "/images/coding-laptop.jpg";
 // import Programming from "../public/images/programming-illustration.svg";
+import Mountain from "../public/images/sagarmatha-banner.jpg";
 
 export default function Home() {
     return (
@@ -14,19 +15,28 @@ export default function Home() {
                     <SideBar/>
                 </div>
                 <aside className="w-full flex justify-center">
-                    <div className="pt-12 flex justify-center items-center">
+                    <div className="flex justify-center items-center overflow-hidden ">
                         <Image
-                            src="/images/sagarmatha-banner.jpg"
-                            fill
-                            className="h-screen"
-                            alt="Background Image"
+                            src={Mountain} // Better for statically import Image only
+                            alt="Banner"
                             style={{
-                                objectFit: "cover",
-                                zIndex: -1,
+                                height: "100vh",
+                                zIndex: "-1",
                             }}
-                            data-aos="zoom-out"
+                           data-aos='zoom-out'
                         />
-                        <h1 className="font-extrabold text-6xl text-slate-200" data-aos="fade-up">
+                        {/*<Image*/}
+                        {/*    src="/images/sagarmatha-banner.jpg"*/}
+                        {/*    fill*/}
+                        {/*    // className="h-screen"*/}
+                        {/*    alt="Background Image"*/}
+                        {/*    style={{*/}
+                        {/*        objectFit: "cover",*/}
+                        {/*        zIndex: -1,*/}
+                        {/*    }}*/}
+                        {/*    data-aos="zoom-out"*/}
+                        {/*/>*/}
+                        <h1 className="absolute font-extrabold text-6xl text-slate-200" data-aos="fade-up">
                             Prabhat Gurung
                         </h1>
                     </div>
