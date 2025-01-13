@@ -9,7 +9,7 @@ const About = () => {
               </div>
               <aside className="w-full flex bg-black h-screen justify-center items-center">
                   <div className="pt-12">
-                      <h1 className="font-extrabold text-6xl text-white">
+                      <h1 className="font-extrabold text-6xl text-white" data-aos='fade-down'>
                           About Me
                       </h1>
                   </div>

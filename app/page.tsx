@@ -36,7 +36,7 @@ export default function Home() {
                         {/*    }}*/}
                         {/*    data-aos="zoom-out"*/}
                         {/*/>*/}
-                        <h1 className="absolute font-extrabold text-6xl text-slate-200" data-aos="fade-up">
+                        <h1 className="absolute font-extrabold text-6xl text-slate-200" data-aos="fade-down">
                             Prabhat Gurung
                         </h1>
                     </div>
